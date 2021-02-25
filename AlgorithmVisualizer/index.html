@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Algorithm Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body> 
+
+	<div class="header">
+		<div class="vars">
+			<div class="range">
+				<div class="slide"><label for="bars">ِBars</label> : <input id="bars" type="range" name="bars"
+						min="1" max="100" value="100" oninput="setup()" onchange="setup()">
+					<span id="b"> </span></div>
+				<div class="slide"><label for="delay">Tempo</label> : <input id="delay" type="range" name="delay"
+						min="0" max="1000" value="40" oninput="setup()" onchange="setup()">
+					<span id="d"></span></div>
+			</div>
+
+			<div class="sorts">
+				<div class="buttons">
+					<button  class="btn-hover color-1" onclick="SelectionSort()">Selection</button>
+					<button class="btn-hover color-2" onclick="BubbleSort()">Bubble</button>
+					<button class="btn-hover color-3" onclick="InsertionSort()">Insertion</button>
+					<button class="btn-hover color-4" onclick="MergeSort()">Merge</button>
+					<button class="btn-hover color-5" onclick="QuickSort()">Quick</button>
+					<button class="btn-hover color-6" onclick="HeapSort()">Heap</button>
+					<button class="btn-hover color-7" onclick="reset()">Reset</button>			
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+	</div>
+	<div id = "info">
+		<h1 id="texthere"></h1>
+		<div id="tc">
+			<h1 id="best"></h1><br><br>
+			<h2 id="btc"></h2>
+		</div>
+		<div id="tc">
+			<h1 id="avg"></h1><br><br>
+			<h2 id="atc"></h2>
+		</div>
+		<div id="tc">
+			<h1 id="worst"></h1><br><br>
+			<h2 id="wtc"></h2>
+		</div>
+	</div>
+	<script src="scripts/script.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</body>
+
+</html>
