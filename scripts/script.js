@@ -23,7 +23,7 @@ function fill_complexities(best, avg, worst){
 	document.getElementById("atc").innerHTML = avg;
 	document.getElementById("worst").innerHTML = "Worst";
 	document.getElementById("wtc").innerHTML = worst;
-	document.getElementById("texthere").innerHTML = "Time Complexity";
+	document.getElementById("texthere").innerHTML = " Time Complexity";
 	
 }
 
