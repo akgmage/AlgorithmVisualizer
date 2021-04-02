@@ -53,6 +53,7 @@ function Finished_Sorting() {
 }
 
 
+
 function generateBars(n = -1) {
 	bars = [];
 	let container = document.getElementById("container");
