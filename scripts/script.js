@@ -17,11 +17,11 @@ var best="";
 var avg="";
 var worst="";
 function fill_complexities(best, avg, worst){
-	document.getElementById("best").innerHTML = "Best ";
+	document.getElementById("best").innerHTML = "Best";
 	document.getElementById("btc").innerHTML = best;
-	document.getElementById("avg").innerHTML = "Average ";
+	document.getElementById("avg").innerHTML = "Average";
 	document.getElementById("atc").innerHTML = avg;
-	document.getElementById("worst").innerHTML = "Worst ";
+	document.getElementById("worst").innerHTML = "Worst";
 	document.getElementById("wtc").innerHTML = worst;
 	document.getElementById("texthere").innerHTML = " Time Complexity";
 	
